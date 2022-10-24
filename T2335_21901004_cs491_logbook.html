@@ -38,7 +38,7 @@
             </div>
         </div>
         <div>
-            I began working on my assigned UML diagram which was the State Diagram
+            I began working on my assigned UML diagram which was the Object Diagram
 			<br>
 			I also created the boilerplate for the Analysis report
             <br>
@@ -55,12 +55,63 @@
             I had stumbled when it came to retreiving a single posting from the MongoDB document. There were
 			2 solutions, the first is retreiving the entire document, then simply comparing everything in a for loop.
 			The second solution was to use the aggregate function of MongoDB.
-			In terms of response time, both were very similar with the for loop approahc being slightly faster
+			In terms of response time, both were very similar with the for loop approach being slightly faster
 			However, the aggregate approach saves alot of network bandwidth, so because our application is a 
 			Mobile application, i have decided to go with the aggregate approach
 			<br>
-			I created the state diagrams for "house-sharer posting" and "house-seeker posting"
+			I finished the Object diagram and planning to arrange a meeting to discuss possible improvements
             <br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    21/10/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            The backend team held a meeting to discuss the Object diagram as
+			the design of the backend should not be left to a single person
+			We decided to improve the design by removing the "stayDuration" field 
+			from the user preference and add "startDate" and "endDate" as fields for
+			a posting, this will give the user more flexibility and allow them
+			to plan ahead 
+			<br>
+			After the meeting, I went to modify the Object diagram to reflect our design choices better
+            <br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    22/10/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            I started implementation from about the 4th week 
+			and started writing the basic endpoints such as
+			creating/getting/updating/deleting a user and the
+			same CRUD operations for postings, however i am working with
+			a subset of the full fields for incremental progress
+			<br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    24/10/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            The first big challenge about our matching algorithm has arrived,
+			how can we retrieve potentially 100s of postings and sort them in order
+			of decreasing matching based on user preference while maintaining fast 
+			response time.
+			I need to think about it for a good amount of time
+			<br>
         </div>
     </main>
 </body>
